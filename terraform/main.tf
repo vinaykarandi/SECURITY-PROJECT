@@ -646,11 +646,11 @@ resource "aws_secretsmanager_secret_version" "config" {
   secret_id = aws_secretsmanager_secret.config.id
   secret_string = jsonencode({
     # LLM providers (consumed by TensorZero sidecar)
-    OPENAI_API_KEY   = "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"
-    GROQ_API_KEY     = "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"
+    OPENAI_API_KEY   = "replace"
+    GROQ_API_KEY     = "replace"
 
     # Observability
-    LANGSMITH_API_KEY = "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"
+    LANGSMITH_API_KEY = "replace"
     LANGCHAIN_PROJECT = "research-agent"
     LANGSMITH_DATASET = "research-agent-reports"
 
